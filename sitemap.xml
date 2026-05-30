@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 首页 -->
+    <url>
+        <loc>https://www.mankata.com/</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Us -->
+    <url>
+        <loc>https://www.mankata.com/about.html</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 服务内容 -->
+    <url>
+        <loc>https://www.mankata.com/services.html</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ご依頼の流れ -->
+    <url>
+        <loc>https://www.mankata.com/process.html</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 料金表 -->
+    <url>
+        <loc>https://www.mankata.com/fees.html</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
