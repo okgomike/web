@@ -396,14 +396,14 @@ footer {
     </a>
 
     <!-- 可选：添加微信按钮 -->
-   <a href="#" 
-   onclick="try{window.open('weixin://contacts/profile/8618069916622')}catch(e){alert('请先安装微信/WeChat')}"
-   class="...">
-  <i class="fab fa-weixin text-2xl"></i>
-  <div>
-    <div class="text-sm font-medium">WeChat</div>
-    <div class="text-xs opacity-90">+86 18069916622</div>
-  </div>
+   <a href="javascript:void(0)" 
+   onclick="try{window.open('weixin://contacts/profile/8618069916622')}catch(e){alert('请安装 WeChat 微信')}"
+   class="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-5 py-4 rounded-2xl shadow-lg transition-all hover:scale-105">
+    <i class="fab fa-weixin text-2xl"></i>
+    <div>
+        <div class="text-sm font-medium"> WeChat</div>
+        <div class="text-xs opacity-90">+86 18069916622</div>
+    </div>
 </a>
 
 </div>
