@@ -3,7 +3,7 @@
 
     <!-- 首页 -->
     <url>
-        <loc>https://www.mankata.com/</loc>
+        <loc>https://mankata.com/</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
     <!-- About Us -->
     <url>
-        <loc>https://www.mankata.com/about.html</loc>
+        <loc>https://mankata.com/about.html</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
     <!-- 服务内容 -->
     <url>
-        <loc>https://www.mankata.com/services.html</loc>
+        <loc>https://mankata.com/services.html</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
     <!-- ご依頼の流れ -->
     <url>
-        <loc>https://www.mankata.com/process.html</loc>
+        <loc>https://mankata.com/process.html</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -35,7 +35,7 @@
 
     <!-- 料金表 -->
     <url>
-        <loc>https://www.mankata.com/fees.html</loc>
+        <loc>https://mankata.com/fees.html</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
