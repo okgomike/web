@@ -78,18 +78,81 @@ footer {
             z-index:100; 
         }
         nav a { color:white; text-decoration:none; font-weight:500; }
-  .hero {
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url('images/hero.jpg');
+  .hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:100px 20px 80px;
+    text-align:center;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
 
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
 
-    padding:100px 20px 80px;
-      min-height:700px;
-    text-align:center;
+    z-index:-1;
+}
+
+/* 第一张 */
+.slide1{
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.30)
+    ),
+    url('images/yiwu-market.jpg');
+
+    animation:fade1 12s infinite;
+}
+
+/* 第二张 */
+.slide2{
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.30)
+    ),
+    url('images/warehouse.jpg');
+
+    animation:fade2 12s infinite;
+}
+
+@keyframes fade1{
+
+    0%,45%{
+        opacity:1;
+    }
+
+    50%,95%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes fade2{
+
+    0%,45%{
+        opacity:0;
+    }
+
+    50%,95%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+    }
+}
+
+.hero-content{
+    position:relative;
+    z-index:10;
 }
         .section { padding:80px 20px; }
         .blue-box { 
@@ -175,6 +238,11 @@ footer {
 
     <!-- Hero -->
     <section class="hero">
+         <div class="slide slide1"></div>
+
+    <div class="slide slide2"></div>
+
+    <div class="hero-content">
         <h1 style="font-size:2.7rem; color:#ffffff; margin:0 0 15px 0;">
     丁寧・迅速・確実・安心
 </h1>
@@ -187,6 +255,8 @@ footer {
                 .......................................................................
             </p>
         <a href="#footer" class="btn" style="margin-top:30px; font-size:1.15rem;">お問い合わせはこちら</a>
+        
+    </div>
     </section>
 
          <!-- ==================== 服务内容完整区块 ==================== -->
