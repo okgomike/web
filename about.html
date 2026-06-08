@@ -45,12 +45,26 @@ nav a:hover::after,
 nav a.active::after{
     width:100%;
 }
-        .hero { 
-            background: linear-gradient(135deg, #1e3a8a, #2a4a9c); 
-            padding:100px 20px 80px; 
-            text-align:center; 
-            color: white;
-        }
+     /* ==========================================
+   HERO SECTION WITH OVERLAY
+========================================== */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url('images/hero4.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 20px 80px;
+    text-align: center;
+    color: white;
+}
         .section { padding:80px 20px; }
         .container { max-width: 1100px; margin: 0 auto; }
         .info-box { 
