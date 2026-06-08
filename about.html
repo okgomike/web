@@ -7,6 +7,7 @@
     <meta name="keywords" content="会社概要, 中国輸入代行, Yiwu Gongbei Trading, 義烏宮北貿易">
     <title>会社概要 | 中国輸入代行サービス - 義烏現地企業</title>
     <link rel="canonical" href="https://mankata.com/about.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root { --primary: #c8102e; }
         body { 
@@ -24,55 +25,44 @@
             z-index:100; 
         }
         nav a{
-    position:relative;
-    color:white;
-    text-decoration:none;
-    transition:all .3s ease;
-}
-
-nav a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0;
-    height:2px;
-    background:#fbbf24;
-    transition:width .3s ease;
-}
-
-nav a:hover::after,
-nav a.active::after{
-    width:100%;
-}
-     /* ==========================================
-   HERO SECTION WITH OVERLAY
-========================================== */
-
-.hero {
+            position:relative;
+            color:white;
+            text-decoration:none;
+            transition:all .3s ease;
+        }
+        nav a::after{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom:-6px;
+            width:0;
+            height:2px;
+            background:#fbbf24;
+            transition:width .3s ease;
+        }
+        nav a:hover::after,
+        nav a.active::after{
+            width:100%;
+        }
+        .btn { 
+            background:var(--primary); 
+            color:white; 
+            padding:14px 32px; 
+            border-radius:6px; 
+            text-decoration:none;
+            display: inline-block;
+        }
+        .hero {
     background:
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
-        ),
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url('images/hero4.jpg');
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     padding: 100px 20px 80px;
     text-align: center;
     color: white;
 }
-        .section { padding:80px 20px; }
-        .container { max-width: 1100px; margin: 0 auto; }
-        .info-box { 
-            background:#f8f9fa; 
-            padding:35px; 
-            border-radius:10px; 
-            margin:30px 0;
-        }
         footer {
             background: #1e3a8a;
             color: white;
@@ -80,61 +70,15 @@ nav a.active::after{
             font-size: 0.95rem;
             line-height: 1.65;
         }
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 60px;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .footer-left, .footer-right {
-            flex: 1;
-            min-width: 300px;
-        }
-        .footer-right {
-            columns: 2;
-            column-gap: 40px;
-        }
-        .footer-right h4 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            color: #ffffff;
-        }
-        .footer-right ol {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .footer-right li {
-            margin-bottom: 8px;
-        }
-        .copyright {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.2);
-            font-size: 0.9rem;
-            color: #ddd;
-        }
-        .btn { 
-            background:var(--primary); 
-            color:white; 
-            padding:14px 32px; 
-            border-radius:6px; 
-            text-decoration:none; 
-        }
     </style>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5235SXRMYG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5235SXRMYG');
-</script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5235SXRMYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5235SXRMYG');
+    </script>
 </head>
 <body>
 
@@ -145,150 +89,131 @@ nav a.active::after{
                 中国輸入代行<br><span style="font-size:0.9rem;">(China Import Agency)</span>
             </div>
             <nav style="display:flex; gap:25px;">
-           <a href="index.html">HOME</a>
+                <a href="index.html">HOME</a>
                 <a href="fees.html">ご利用代金</a>
                 <a href="process.html">お買い物の流れ</a>
-                <a href="about.html">会社概要</a>
+                <a href="about.html" class="active">会社概要</a>
             </nav>
         </div>
     </header>
 
-<!-- Hero / 会社概要头部 -->
-<section class="bg-[#1e40af] text-white py-20 md:py-24">
-    <div class="max-w-4xl mx-auto px-6 text-center">   <!-- 核心居中容器 -->
-
-        <h2 class="text-4xl md:text-5xl font-bold mb-10">
-            会社概要 (About Us)
-        </h2>
-        
-        <div class="text-lg md:text-xl leading-relaxed text-blue-100 max-w-3xl mx-auto">
-            <p class="mb-6">
-                義烏市宮北貿易商行は中国浙江省義烏市に拠点を置く、中国輸入代行専門会社です。
-            </p>
-            <p class="mb-6">
-                2018年の設立以来、日本の中小企業様、EC事業者様、個人輸入事業者様に向けて、
-                「安心・低コスト・透明性」の高い輸入サポートを提供してまいりました。
-            </p>
-            <p class="mb-6">
-                大手代行会社とは違い、弊社は現地スタッフが直接市場と工場を回り、
-                小ロット注文にも柔軟に対応しています。
-            </p>
-            <p>
-                お客様一人ひとりに専任担当がつき、細かいご要望にも丁寧にお応えします。
-            </p>
+    <!-- 会社概要头部 -->
+    <section class="hero text-white py-20 md:py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-10">会社概要 (About Us)</h2>
+            <div class="text-lg md:text-xl leading-relaxed text-blue-100 max-w-3xl mx-auto space-y-6">
+                <p>義烏市宮北貿易商行は中国浙江省義烏市に拠点を置く、中国輸入代行専門会社です。</p>
+                <p>2018年の設立以来、日本の中小企業様、EC事業者様、個人輸入事業者様に向けて、「安心・低コスト・透明性」の高い輸入サポートを提供してまいりました。</p>
+                <p>大手代行会社とは違い、弊社は現地スタッフが直接市場と工場を回り、小ロット注文にも柔軟に対応しています。</p>
+                <p>お客様一人ひとりに専任担当がつき、細かいご要望にも丁寧にお応えします。</p>
+            </div>
         </div>
-    </div>
-</section>
-
- <!-- Content -->
-    <section class="section">
-       <!-- 公司信息 + 联系方式 + 选择理由 整体区块 -->
-<div class="max-w-4xl mx-auto px-6 py-12 space-y-10">
-
-    <!-- 1. 会社情報 -->
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
-        <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">会社情報 / Company Information</h3>
-        <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-gray-700">
-            <p><strong>会社名：</strong> 義烏市宮北貿易商行</p>
-            <p><strong>Company Name：</strong> Yiwu Gongbei Trading Firm.</p>
-            <p><strong>設立：</strong> 2018年5月21日</p>
-            <p><strong>Established：</strong> May 21, 2018</p>
-            <p><strong>住所：</strong> 浙江省義烏市後宅街道後宅工業区華力路33号</p>
-            <p><strong>Address：</strong> No.33, Huali Road, Houzhai Industrial Zone, Houzhai Subdistrict, Yiwu City, Zhejiang Province, China</p>
-            <p><strong>郵便番号：</strong> 322000</p>
-            <p><strong>担当者：</strong> 趙軍鵬 (Zhao Junpeng)</p>
-        </div>
-    </div>
-
-    <!-- 2. 連絡先 -->
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
-        <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">連絡先 / Contact Information</h3>
-        <div class="space-y-4 text-gray-700">
-            <p><strong>Mobile / WeChat：</strong> +86 1806 991 6622</p>
-            <p><strong>Email：</strong> mankatawang@gmail.com</p>
-            <p><strong>Chatwork：</strong> 2723789561@qq.com</p>
-            <p><strong>Skype：</strong> +86 18167 010551</p>
-        </div>
-    </div>
-
-    <!-- 3. お客様が当社を選ぶ理由 -->
-    <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
-        <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">お客様が当社を選ぶ理由 / Why Choose Us</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-            <div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>日本語でスムーズな対応</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>中日貿易10年以上の実績</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>義烏200㎡無料倉庫提供</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>一括代行サービス</span>
-            </div>
-            <div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>徹底した品質管理</span>
-            </div>
-<div class="flex items-start gap-3">
-                <span class="text-green-500 text-xl mt-0.5">✅</span>
-                <span>楽天・Amazon FBA完全対応</span>
-            </div>
-
-
-                 <p style="margin-top:25px; font-weight:bold; color:#1e3a8a; font-size:31px;">
-                    
-                    代表メッセージ:
-
-                </p>
-                 <p style="margin-top:25px; font-weight:bold; color:#1e3a8a;">
-「日本のお客様が中国輸入で抱える不安を少しでも減らしたい」
-それがMankataを立ち上げた理由です。言語の壁、信頼できる工場の探し方、品質管理の難しさ…
-すべて私たちが代わりに解決いたします。
-                </p>
-        </div>
-    </div>
-
     </section>
-      
+
+    <!-- 内容区域 -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto space-y-10">
+            <!-- 会社情報 -->
+            <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
+                <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">会社情報 / Company Information</h3>
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-gray-700">
+                    <p><strong>会社名：</strong> 義烏市宮北貿易商行</p>
+                    <p><strong>Company Name：</strong> Yiwu Gongbei Trading Firm.</p>
+                    <p><strong>設立：</strong> 2018年5月21日</p>
+                    <p><strong>Established：</strong> May 21, 2018</p>
+                    <p><strong>住所：</strong> 浙江省義烏市後宅街道後宅工業区華力路33号</p>
+                    <p><strong>Address：</strong> No.33, Huali Road, Houzhai Industrial Zone, Yiwu, Zhejiang</p>
+                    <p><strong>郵便番号：</strong> 322000</p>
+                    <p><strong>担当者：</strong> 趙軍鵬 (Zhao Junpeng)</p>
+                </div>
+            </div>
+
+            <!-- 連絡先 -->
+            <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
+                <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">連絡先 / Contact Information</h3>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Mobile / WeChat：</strong> +86 1806 991 6622</p>
+                    <p><strong>Email：</strong> mankatawang@gmail.com</p>
+                    <p><strong>Chatwork：</strong> 2723789561@qq.com</p>
+                    <p><strong>Skype：</strong> +86 18167 010551</p>
+                </div>
+            </div>
+
+            <!-- 選ぶ理由 + 代表メッセージ -->
+            <div class="bg-white rounded-2xl shadow-sm p-8 md:p-10">
+                <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-4">お客様が当社を選ぶ理由 / Why Choose Us</h3>
+                <div class="grid md:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>日本語でスムーズな対応</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>中日貿易10年以上の実績</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>義烏200㎡無料倉庫提供</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>一括代行サービス</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>徹底した品質管理</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-green-500 text-xl">✅</span>
+                        <span>楽天・Amazon FBA完全対応</span>
+                    </div>
+                </div>
+
+                <!-- 代表メッセージ -->
+                <div class="mt-8 border-t pt-8">
+                    <h4 class="text-[#1e3a8a] text-2xl font-bold mb-4">代表メッセージ</h4>
+                    <p class="text-[#1e3a8a] font-bold leading-loose">
+                        「日本のお客様が中国輸入で抱える不安を少しでも減らしたい」<br>
+                        それがMankataを立ち上げた理由です。言語の壁、信頼できる工場の探し方、品質管理の難しさ…
+                        すべて私たちが代わりに解決いたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-left">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-10 justify-between px-4">
+            <div class="flex-1 min-w-[300px]">
                 <strong>Contact:</strong><br><br>
                 Mobile / WeChat: +86 1806 991 6622;<br>
                 Email: mankatawang@gmail.com;<br>
                 Chatwork: 2723789561@qq.com;<br><br>
                 <strong>Address:</strong><br>
                 浙江省義烏市 後宅街道後宅工業区華力路33号<br>
-                (No.33, Huali Road, Houzhai Industrial Zone, Houzhai Subdistrict, Yiwu City, Zhejiang Province, China)
+                No.33, Huali Road, Houzhai Industrial Zone, Yiwu, Zhejiang, China
             </div>
 
-            <div class="footer-right">
-                <h4>サービス内容:</h4>
-                <ol>
-                    <li>1. アリババ・タオバオ買付代行</li>
-                    <li>2. 楽天、アマゾンFBA直納代行</li>
-                    <li>3. OEM/ODM生産代行</li>
-                    <li>4. 無在庫・ドロップシッピング代行</li>
-                    <li>5. 義烏国際市場アテンド＆商品調査</li>
-                    <li>6. サプライヤー選定・価格交渉</li>
-                    <li>7. サンプル手配・検品・品質管理</li>
-                    <li>8. 二次包装・カスタム包装・FNSKU貼付</li>
-                    <li>9. 国際輸送・通関書類作成</li>
-                    <li>10. 義烏倉庫保管・在庫管理</li>
-                    <li>11. 現地工場視察・生産進捗管理</li>
+            <div class="flex-1 min-w-[300px] columns-2 gap-10">
+                <h4 class="text-lg font-bold mb-4">サービス内容:</h4>
+                <ol class="pl-5 space-y-1">
+                    <li>アリババ・タオバオ買付代行</li>
+                    <li>楽天、アマゾンFBA直納代行</li>
+                    <li>OEM/ODM生産代行</li>
+                    <li>無在庫・ドロップシッピング代行</li>
+                    <li>義烏国際市場アテンド</li>
+                    <li>サプライヤー選定・価格交渉</li>
+                    <li>サンプル手配・検品・品質管理</li>
+                    <li>二次包装・FNSKU貼付</li>
+                    <li>国際輸送・通関書類作成</li>
+                    <li>義烏倉庫保管・在庫管理</li>
+                    <li>現地工場視察・生産管理</li>
                 </ol>
             </div>
         </div>
 
-        <div class="copyright">
+        <div class="max-w-6xl mx-auto mt-10 pt-5 border-t border-white/20 text-center text-sm text-gray-200">
             &copy; 2017-2026 中国輸入代行 (China Import Agency) — Yiwu Gongbei Trading Firm.<br>
             All Rights Reserved.
         </div>
